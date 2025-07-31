@@ -6,6 +6,7 @@ const Projects = () => {
       <header>
       <Navbar/>
     </header>
+    
     </div>
   )
 }
