@@ -11,19 +11,19 @@ const routes = [
 
     },
     {
-        path:"/",
+        path:"/about",
         Element: <About />  ,
         errorElement:<Errorpage/>,
 
     },
     { 
-        path:"/",
+        path:"/projects",
         Element:<Projects />,
         errorElement:<Errorpage/>,
 
     }, 
     { 
-        path:"/",
+        path:"/contacts",
         Element:<Contacts />,
         errorElement:<Errorpage/>,
 
