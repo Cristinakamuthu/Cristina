@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import Errorpage from "./components/pages/Errorpage";
 import Projects from "./components/Projects";
 import Contacts  from "./components/Contacts";
-const Routes = [
+const routes = [
     {
         path:"/",
         Element: <Home/>,
@@ -32,4 +32,4 @@ const Routes = [
 
     
 ]
-export default Routes;
+export default routes;
