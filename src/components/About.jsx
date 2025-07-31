@@ -14,7 +14,8 @@ const About = () => {
         <div className="section">
           <div className="text">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id culpa perspiciatis provident et dolore eos rerum optio, dolorum distinctio. Laboriosam.
+            I'm well conversant with JavaScript, React, Python, and Flask. I especially enjoy backend development using Flask and love building projects in my free time to sharpen my skills and explore new ideas.
+
             </p>
           </div>
           <div className="image">
@@ -28,8 +29,7 @@ const About = () => {
           </div>
           <div className="text">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente veniam consectetur eaque eum aliquam sed ut obcaecati quam fugit sit!
-            </p>
+Outside tech, I’m passionate about music — I write, teach, and conduct, and I love using creativity to connect with others through both code and sound.            </p>
           </div>
         </div>
       </div>
