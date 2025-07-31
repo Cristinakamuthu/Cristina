@@ -1,68 +1,91 @@
 import React from 'react'
 
 const Template = () => {
-    const apis = {
-  farmart: {
-    link: "https://mock.farmart.api",
+  const apis = {
+    moringaLostAndFound: {
+      title: "Moringa Lost and Found",
+      link: "https://github.com/Cristinakamuthu/moringa-lost-and-found-backend-1",
+      description: "A Flask API that allows users to report lost or found items within the Moringa community. It includes user authentication, item management, and admin controls.",
+      features: {
+        "User Authentication with JWT": "Users can create accounts and log in. JWT tokens are used to protect routes and maintain secure sessions.",
+        "Lost & Found Management": "Logged-in users can create, update, or delete item reports. All items are stored and retrieved through API endpoints.",
+        "Admin Controls": "Admins can manage user accounts and moderate reported content.",
+        "RESTful Routes": "The API uses HTTP methods (GET, POST, PUT, DELETE) following REST principles.",
+        "Password Security": "User passwords are hashed before being stored to improve security.",
+        "CORS Configuration": "CORS is enabled to allow safe communication between the frontend and backend.",
+        "Database Management": "Uses SQLite for local data storage, and Flask-Migrate to handle database migrations."
+      }
+    },
 
-    features: {
-      1: " Login & Signup: Users (farmers/buyers) can register and authenticate using JWT.",
-      2: " Animal Listings: Farmers can post, update, or delete animals for sale.",
-      3: " Cart & Orders: Buyers can add animals to cart, checkout, and view past orders.",
-      4: " RESTful API: Consistent CRUD structure for all resources.",
-    }
-  },
+    farmart: {
+      title: "Farmart Backend",
+      link: "https://github.com/Cristinakamuthu/farmat-backend",
+      description: "Backend API for an online marketplace that connects farmers with buyers. It supports user roles, product listings, orders, and authentication.",
+      features: {
+        "User and Farmer Accounts": "Both buyers and farmers can register and log in securely using JWT tokens.",
+        "Animal Listings (CRUD)": "Farmers can post, update, or remove animal listings from the platform.",
+        "Cart and Checkout System": "Buyers can add animals to their cart and complete orders.",
+        "Admin Dashboard": "Admins have access to manage users, products, and order history.",
+        "RESTful API Design": "Follows REST conventions to make frontend integration easier.",
+        "Data Security": "Sensitive routes are protected using token-based authorization.",
+        "SQLite and Flask-Migrate": "Stores application data using SQLite, with migrations handled by Flask-Migrate.",
+        "CORS Support": "Frontend and backend can communicate securely using configured CORS headers."
+      }
+    },
 
-  jirani: {
-    link: "https://mock.jirani.api",
+    miniYouTube: {
+      title: "Mini YouTube Frontend",
+      link: "https://github.com/Cristinakamuthu/mini_youtube",
+      description: "A React frontend that allows users to search and watch YouTube videos. Built using the YouTube Data API.",
+      features: {
+        "Video Search and Playback": "Users can search videos by keywords and play them directly in the app.",
+        "Responsive Layout": "The UI adjusts properly on mobile, tablet, and desktop screens.",
+        "Dynamic Routing": "Each video has its own route and detail page using React Router.",
+        "Component-Based Structure": "The app is built using reusable components for better code organization.",
+        "API Integration": "Uses YouTube Data API to fetch video information in real time.",
+        "Simple and Clean UI": "Designed with a focus on usability and clarity.",
+        "Planned Features": "In future, it will support user accounts, video uploads, comments, likes, ratings, and a dashboard for content creators."
+      }
+    },
 
-    features: {
-      1: " Neighborhood Posts: Residents can post messages to their area feed.",
-      2: " Role-based System: Users can register as neighbors or service providers.",
-      3: " Location-Specific Notifications: Alerts targeted to users by area.",
-      4: " Moderation Tools: Admins can manage content and users.",
-    }
-  },
+    safeSpaceBackend: {
+      title: "Safe Space Backend (Open Source Contributor)",
+      link: "https://github.com/Jjumaaa/Safe-Space-Backend",
+      description: "An API for a mental health app that supports anonymous journaling and mood tracking. I contributed to the backend logic and improvements.",
+      features: {
+        "Anonymous Journaling": "Users can write journal entries without revealing their identity.",
+        "Mood Tracking": "Helps users track how they feel over time through mood logs.",
+        "Therapist Interaction (Planned)": "Future versions will include structured communication with therapists.",
+        "JWT Authentication": "Token-based login system to protect user sessions and routes.",
+        "Database and Migrations": "Data is stored using SQLite and changes are managed using Flask-Migrate.",
+        "Team Collaboration": "Built by a team using GitHub branching and pull requests.",
+        "My Contributions": "Contributed on [Cristinakamuthu-patch-1](https://github.com/Jjumaaa/Safe-Space-Backend/compare/Cristinakamuthu-patch-1) and [Tina](https://github.com/Jjumaaa/Safe-Space-Backend/compare/Tina...main) branches, working on features and bug fixes.",
+        "Next Steps": "Plans include adding secure messaging and AI-based wellness suggestions."
+      }
+    },
 
-  catholicTunes: {
-    link: "https://mock.catholictunes.api",
-
-    features: {
-      1: " Upload Music: Artists can share Catholic tracks and metadata.",
-      2: " Auto Lyrics Sync: Real-time lyrics scroll while the song plays.",
-      3: " Smart Search: Filter by artist, language, or category.",
-      4: " Playlist & Favorites: Users can save favorite tracks into custom lists.",
-    }
-  },
-
-  portfolioSite: {
-    link: "https://cristina-portfolio.vercel.app",
-
-    features: {
-      1: " Dev Portfolio: A sleek showcase of your projects, skills, and experience.",
-      2: " Resume Download: Visitors can view and download your up-to-date CV.",
-      3: " Contact Form: Integrated with EmailJS or Formspree for direct reach.",
-      4: " Responsive Layout: Fully optimized for mobile, tablet, and desktop.",
-    }
-  },
-
-  mamaFuaApp: {
-    link: "https://mock.mamafua.api",
-
-    features: {
-      1: " Service Booking: Users can book mama fua (cleaners) for home chores.",
-      2: " Location-Based Matching: Connects users to workers in their area.",
-      3: " Real-Time Scheduling: Users pick date/time and see availability.",
-      4: " Reviews & Ratings: Users can rate services after completion.",
+    lateShowAPI: {
+      title: "Late Show API",
+      link: "https://github.com/Cristinakamuthu/Phase-4-Code-Challenge-Two-Late-Show-API",
+      description: "A Flask API built for managing late-night shows and performers. Developed as part of a learning challenge to demonstrate backend skills.",
+      features: {
+        "CRUD for Shows and Performers": "Users can create, update, and delete shows and performer entries.",
+        "JWT Login System": "Secure login system with token protection for private routes.",
+        "Authorization Logic": "Restricts actions based on whether the user is logged in.",
+        "RESTful Endpoints": "Follows REST structure for handling resources.",
+        "ORM with SQLAlchemy": "Handles database operations using Flask-SQLAlchemy.",
+        "Schema Validation": "Marshmallow is used to validate and serialize API data.",
+        "Simple Architecture": "The codebase is modular and easy to maintain.",
+        "Challenge Purpose": "Built as a timed challenge to apply real-world backend concepts."
+      }
     }
   }
-};
-
-    
 
   return (
-    <div>Template</div>
-  )
+    <div>
+      <h1>ffuyilojlk</h1>
+    </div>
+  );
 }
 
-export default Template
+export default Template;
