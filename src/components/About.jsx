@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
-import  jsandpython  from '/home/cristina/Development/code/my_own_projects/cristina-portfolio/src/assets/jsandpython.png'
-import  music  from '/home/cristina/Development/code/my_own_projects/cristina-portfolio/src/assets/music.jpeg'
+import  jsandpython  from '/src/assets/jsandpython.png'
+import  music  from '/src/assets/music.jpeg'
 
 const About = () => {
   return (
